@@ -7,5 +7,4 @@ export type IconList =
   | "Close"
   | "Download"
   | "LeoGerbacioRomeroLogo"
-  | "MenuBurger"
   | "WhatsApp";
