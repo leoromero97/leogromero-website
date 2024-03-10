@@ -28,9 +28,9 @@ function NavMobile({ menuOpened, onClick }: NavMobileProps) {
       isLight && 'bg-white text-skyblue-90 shadow-drop-3', */
       )}
     >
-      <div className="max-w-8xl flex items-center justify-between w-full px-8 py-7">
-        <Link href="/" title="Ir al Home">
-          <Icon icon="LeoGerbacioRomeroLogo" className="h-16 w-1h-16" />
+      <div className="flex justify-between w-full p-5 max-w-7xl">
+        <Link href="/" title="Ir al inicio">
+          <Icon icon="LeoGerbacioRomeroLogo" className="h-16 w-16" />
         </Link>
         <div className="flex items-center justify-center outline-none hover:cursor-pointer">
           <MenuBurger onPressBurger={handleOnPressBurger} isBurger={isBurger} />
@@ -39,10 +39,10 @@ function NavMobile({ menuOpened, onClick }: NavMobileProps) {
       {menuOpened && (
         <nav
           className={clsx(
-            "flex items-center gap-2 flex-col w-full font-normal flex-1 justify-between transition-all delay-300 ease-in-out"
+            "flex items-center gap-2 flex-col w-full font-normal flex-1 justify-between transition-all delay-300 ease-in-out max-w-7xl"
           )}
         >
-          <ul className={clsx("flex w-full", "flex-col flex-shrink-0 pt-20")}>
+          <ul className={clsx("flex w-full flex-col flex-shrink-0 pt-20")}>
             {navbarLinks.map((navItem) => (
               <li
                 key={navItem.id}
@@ -60,7 +60,7 @@ function NavMobile({ menuOpened, onClick }: NavMobileProps) {
                     active:font-semibold 
                     font-medium 
                     rounded  
-                    text-lg 
+                    text-2xl 
                     ease-in-out 
                     duration-100 
                     py-4 
@@ -81,7 +81,7 @@ function NavMobile({ menuOpened, onClick }: NavMobileProps) {
               className="mx-8 my-14"
             /> */}
           </ul>
-          <div className="flex justify-center w-full pb-14 px-8 gap-8">
+          <div className="flex justify-center w-full pb-14 px-2 gap-8">
             <Button
               text={texts.actions.contactForWpp}
               icon="WhatsApp"
