@@ -1,6 +1,6 @@
 import { ButtonVariationType } from "./types";
 
-export const baseStyles = `flex rounded-full gap-2 items-center justify-center font-semibold text-lg px-6 py-3 ease-in-out duration-300 disabled:cursor-not-allowed disabled:pointer-events-none`;
+export const baseStyles = `flex rounded-full gap-2 items-center justify-center font-semibold text-md lg:text-lg px-6 py-3 ease-in-out duration-300 disabled:cursor-not-allowed disabled:pointer-events-none`;
 
 export const buttonStyles: { [key in ButtonVariationType]: string | string[] } =
   {
