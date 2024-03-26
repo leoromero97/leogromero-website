@@ -29,8 +29,8 @@ function HeroSection() {
   }, []);
 
   return (
-    <section className="flex flex-col pt-52 lg:pt-80 xl:pt-96 pb-20 gap-10 w-full max-w-7xl px-8 lg:gap-14 lg:bg-hero-pattern lg:bg-no-repeat lg:bg-right">
-      <h1 className="text-h2 font-bold text-silver-300 lg:text-h1 flex flex-col gap-2 lg:h-96">
+    <section className="flex flex-col pt-36 md:pt-52 lg:pt-80 xl:pt-96 pb-20 gap-10 w-full max-w-7xl px-8 lg:gap-14 lg:bg-hero-pattern lg:bg-no-repeat lg:bg-right">
+      <h1 className="text-h3 md:text-h2 font-bold text-silver-300 lg:text-h1 flex flex-col gap-2 lg:h-96">
         <span>{title.concat(" ")}</span>
         <span className="text-silver-0">
           {servicesInHero[currentLabelIndex].concat(" ")}

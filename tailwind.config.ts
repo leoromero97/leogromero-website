@@ -45,7 +45,9 @@ const config: Config = {
       fontSize: {
         h1: ["80px", "1.4"],
         h2: ["64px", "1.4"],
-        h3: "50px",
+        h3: ["50px", "1.4"],
+        h4: ["30px", "1.2"],
+        subtitle: ["24px", "1.2"],
       },
     },
   },
