@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function SliderTools() {
   return (
-    <div className="w-full relative">
-      <ul className="w-full flex p-2 gap-4 overflow-x-scroll absolute">
+    <div className="w-full bg-transparent">
+      <ul className="flex py-2 gap-4 w-screen animate-autoSlider">
         {TOOLS.map(({ icon, id, title }) => (
           <li
             key={id}

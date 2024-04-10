@@ -49,6 +49,15 @@ const config: Config = {
         h4: ["30px", "1.2"],
         subtitle: ["24px", "1.2"],
       },
+      keyframes: {
+        autoSliderMobile: {
+          '0%': { transform: 'translateX(0)'},
+          '100%': { transform: 'translateX(-470%)'},
+        },
+      },
+      animation: {
+        autoSliderMobile: 'autoSliderMobile 15s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
