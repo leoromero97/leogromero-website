@@ -27,7 +27,6 @@ import logoGoogleForms from "@/assets/forms.svg";
 import logoGoogleCalendar from "@/assets/google-calendar.svg";
 import logoGoogleMeet from "@/assets/google-meet.svg";
 import logoZoom from "@/assets/zoom.svg";
-import logoMicrosoftTeams from "@/assets/microsoft-teams.svg";
 import logoSlack from "@/assets/slack.svg";
 import logoAdobeIllustrator from "@/assets/adobe-illustrator.svg";
 import logoMiro from "@/assets/miro.svg";
@@ -62,7 +61,6 @@ export const ASSETS = {
   googleCalendar: logoGoogleCalendar,
   googleMeet: logoGoogleMeet,
   zoom: logoZoom,
-  microsoftTeams: logoMicrosoftTeams,
   slack: logoSlack,
   adobeIllustrator: logoAdobeIllustrator,
   miro: logoMiro,

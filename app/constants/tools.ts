@@ -153,11 +153,6 @@ export const TOOLS: ToolProp[] = [
     title: "Zoom",
   },
   {
-    id: "microsoft-teams",
-    icon: ASSETS.microsoftTeams,
-    title: "Microsoft Teams",
-  },
-  {
     id: "slack",
     icon: ASSETS.slack,
     title: "Slack",
