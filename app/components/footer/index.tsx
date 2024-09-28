@@ -27,7 +27,7 @@ export default function Footer() {
             icon="Calendar"
             className="w-full"
             external
-            href="https://calendly.com/leonardogerbacioromero"
+            href="https://calendly.com/d/cqbz-545-9sn/reunion-por-servicios-digitales"
           />
           <a
             href="/assets/files/CV_Leonardo_Esteban_Gerbacio_Romero.pdf"
