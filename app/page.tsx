@@ -6,6 +6,7 @@ import { texts } from "./constants/texts";
 import { externalLink } from "./constants/externalMessage";
 import AboutSection from "./components/sections/about";
 import ServicesSection from "./components/sections/services";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
           className="w-full max-w-sm"
         />
       </div>
+      <Footer />
     </main>
   );
 }

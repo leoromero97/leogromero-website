@@ -32,7 +32,7 @@ function NavMobile({ menuOpened, onClick }: NavMobileProps) {
         <Link href="/" title="Ir al inicio">
           <Icon icon="LeoGerbacioRomeroLogo" className="h-16 w-16" />
         </Link>
-        <div className="flex items-center justify-center outline-none hover:cursor-pointer">
+        <div className="flex items-center justify-center outline-none hover:cursor-pointer opacity-0">
           <MenuBurger onPressBurger={handleOnPressBurger} isBurger={isBurger} />
         </div>
       </div>

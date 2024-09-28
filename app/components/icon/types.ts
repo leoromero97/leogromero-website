@@ -8,4 +8,10 @@ export type IconList =
   | "Download"
   | "IconRight"
   | "LeoGerbacioRomeroLogo"
-  | "WhatsApp";
+  | "WhatsApp"
+  | "Behance"
+  | "Calendar"
+  | "Email"
+  | "GitHub"
+  | "Linkedin"
+  | "IconLocation";
