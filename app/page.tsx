@@ -5,6 +5,7 @@ import Button from "./components/button";
 import { texts } from "./constants/texts";
 import { externalLink } from "./constants/externalMessage";
 import AboutSection from "./components/sections/about";
+import ServicesSection from "./components/sections/services";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       w-full 
       h-auto 
       min-h-screen
+      
       `
       )}
     >
@@ -23,6 +25,7 @@ export default function Home() {
       <div className="flex absolute min-w-[400px] min-h-[400px] lg:min-h-[1000px] lg:min-w-[1000px] bg-gradient-to-br from-transparent to-blue-600 rounded-full -left-40 top-8 lg:top-0 -z-20 blur-3xl opacity-60"></div>
       <HeroSection />
       <AboutSection />
+      <ServicesSection />
       <div className="w-full bottom-14 fixed md:hidden flex items-center justify-center px-2">
         <Button
           text={texts.actions.contactForWpp}
@@ -32,9 +35,6 @@ export default function Home() {
           className="w-full max-w-sm"
         />
       </div>
-      {/*   
-      <div className="flex absolute min-w-96 min-h-96 lg:min-h-[800px] lg:min-w-[800px] bg-gradient-to-br from-transparent to-blue-600 rounded-full left-1/2 transform -translate-x-1/2 -z-20 blur-3xl"></div>
-      <div className="flex absolute min-w-96 min-h-96 lg:min-h-[800px] lg:min-w-[800px] bg-gradient-to-br from-transparent to-blue-600 rounded-full left-0 bottom-0 -z-20 blur-3xl"></div> */}
     </main>
   );
 }

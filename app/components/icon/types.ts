@@ -6,5 +6,6 @@ export interface IIconProps {
 export type IconList =
   | "Close"
   | "Download"
+  | "IconRight"
   | "LeoGerbacioRomeroLogo"
   | "WhatsApp";

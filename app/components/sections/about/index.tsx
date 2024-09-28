@@ -8,12 +8,12 @@ import { externalLink } from "@/constants/externalMessage";
 
 function AboutSection() {
   return (
-    <div className="flex flex-col pt-10 pb-20 px-5 gap-10 border-white w-full max-w-7xl overflow-hidden">
+    <section className="flex flex-col pt-10 pb-20 px-5 gap-10 w-full max-w-7xl overflow-hidden lg:overflow-visible relative">
       <div className="flex flex-col gap-5">
         <Image
           alt="Foto de Leo"
           src={leoPictureAbout}
-          className="lg:hidden h-60 w-60 self-center"
+          className="lg:hidden h-60 w-60 self-center ease-in-out"
         />
         <h2 className="text-h4 lg:text-h3 font-semibold text-silver-0 text-center">
           Leonardo Gerbacio Romero
@@ -49,10 +49,11 @@ function AboutSection() {
               to={externalLink}
             />
         </div>
+        <div className="flex absolute min-w-[400px] min-h-[400px] lg:min-h-[1000px] lg:min-w-[1000px] bg-gradient-to-bl from-transparent to-blue-600 rounded-full -right-40 top-8 lg:top-0 -z-20 blur-3xl opacity-60"></div>
         <SliderTools />
         <GridTools />
       </div>
-    </div>
+    </section>
   );
 }
 
