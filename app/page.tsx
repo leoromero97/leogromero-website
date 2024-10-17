@@ -18,7 +18,7 @@ export default function Home() {
       w-full 
       h-auto 
       min-h-screen
-      
+      overflow-x-hidden
       `
       )}
     >
