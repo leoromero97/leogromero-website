@@ -3,28 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: "#D3D4DE";
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --text-default: #F1F2FC;
+  --bg-default: #010619;
+  --text-dark: #F1F2FC;
+  --bg-dark: #010619;
+  --text-light: #0B0C16;
+  --bg-light: #F1F2FC;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text-default);
+  background: var(--bg-default);
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--text-dark);
+    background: var(--bg-dark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: var(--text-light);
+    background: var(--bg-light);
+  }
+}
+
 
 @layer utilities {
   .text-balance {
