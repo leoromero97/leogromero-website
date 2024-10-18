@@ -3,33 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --text-default: #F1F2FC;
+  --text-default: #f1f2fc;
   --bg-default: #010619;
-  --text-dark: #F1F2FC;
-  --bg-dark: #010619;
-  --text-light: #0B0C16;
-  --bg-light: #F1F2FC;
 }
 
 body {
   color: var(--text-default);
-  background: var(--bg-default);
+  background-color: var(--bg-default);
 }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    color: var(--text-dark);
-    background: var(--bg-dark);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    color: var(--text-light);
-    background: var(--bg-light);
-  }
-}
-
 
 @layer utilities {
   .text-balance {
