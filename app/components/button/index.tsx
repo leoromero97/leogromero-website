@@ -2,9 +2,10 @@ import { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react";
 import Link from "next/link";
 import clsx from "clsx";
 
-import { buttonStyles } from "./styles";
+import { buttonStylesDark, buttonStylesLight } from "./styles";
 import { IAnchorButtonProps, IButtonProps } from "./types";
 import Icon from "../icon";
+import useTheme from "@/hooks/useTheme";
 
 function Button({
   onClick,
@@ -21,13 +22,16 @@ function Button({
   to,
   ...props
 }: IButtonProps | IAnchorButtonProps) {
+  const { isDark, isLight } = useTheme();
+
   if (to) {
     return (
       <Link
         href={to}
         onClick={onClick}
         className={clsx(
-          buttonStyles[variation],
+          isDark && buttonStylesDark[variation],
+          isLight && buttonStylesLight[variation],
           disabled
             ? "pointer-events-none opacity-50 focus:outline-none focus:ring-0 focus-within:ring-0"
             : "",
@@ -50,11 +54,12 @@ function Button({
         rel="noopener noreferrer"
         target="_blank"
         className={clsx(
-          buttonStyles[variation],
+          isDark && buttonStylesDark[variation],
+          isLight && buttonStylesLight[variation],
           disabled
             ? "pointer-events-none opacity-50 focus:outline-none focus:ring-0 focus-within:ring-0"
             : "",
-          className,
+          className
         )}
         title={title}
         {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}
@@ -69,7 +74,8 @@ function Button({
   return (
     <button
       className={clsx(
-        buttonStyles[variation],
+        isDark && buttonStylesDark[variation],
+        isLight && buttonStylesLight[variation],
         className,
         disabled
           ? "pointer-events-none opacity-50 focus:outline-none focus:ring-0 focus-within:ring-0"

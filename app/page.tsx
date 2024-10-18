@@ -1,3 +1,5 @@
+"use client";
+
 import clsx from "clsx";
 import Navbar from "./components/navbar";
 import HeroSection from "./components/sections/hero";
@@ -7,8 +9,11 @@ import { externalLink } from "./constants/externalMessage";
 import AboutSection from "./components/sections/about";
 import ServicesSection from "./components/sections/services";
 import Footer from "./components/footer";
+import useTheme from "./hooks/useTheme";
 
 export default function Home() {
+  const { isDark, isLight } = useTheme();
+
   return (
     <main
       className={clsx(
@@ -19,7 +24,9 @@ export default function Home() {
       h-auto 
       min-h-screen
       overflow-x-hidden
-      `
+      `,
+        isDark && "bg-blue-900 bg-opacity-60 text-silver-0",
+        isLight && "bg-blue-0 text-silver-900"
       )}
     >
       <Navbar />
