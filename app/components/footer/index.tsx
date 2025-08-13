@@ -14,6 +14,7 @@ export default function Footer() {
   const { isDark, isLight } = useTheme();
   const date = new Date();
   const currentYear = date.getFullYear();
+  const titleMeeting = "Reunión por servicios digitales desde la web";
 
   return (
     <footer className="flex flex-col pt-10 pb-32 px-5 gap-10 md:gap-20 lg:gap-40 w-full max-w-7xl">
@@ -47,10 +48,10 @@ export default function Footer() {
               icon="Calendar"
               className="w-full"
               external
-              href="https://calendly.com/d/cqbz-545-9sn/reunion-por-servicios-digitales"
+              href={`https://www.google.com/calendar/render?action=TEMPLATE&text=${titleMeeting}`}
             />
             <a
-              href="/assets/files/CV_Leonardo_Esteban_Gerbacio_Romero.pdf"
+              href="/Leonardo Esteban Gerbacio Romero CV - Spanish.pdf"
               download="CV Leonardo Gerbacio Romero"
               className={clsx(
                 baseStyles,

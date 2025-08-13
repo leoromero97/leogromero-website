@@ -10,12 +10,10 @@ function Navbar() {
   };
 
   return (
-    <>
       <NavMobile
         menuOpened={menuOpened}
         onClick={onOpenMenu}
       />
-    </>
   );
 }
 
