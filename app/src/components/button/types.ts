@@ -1,4 +1,4 @@
-import { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
+import { AnchorHTMLAttributes, ReactNode } from "react";
 import { IconList } from "../icon/types";
 
 export type ButtonStatesType = "default" | "hover" | "pressed" | "disabled";

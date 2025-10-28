@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import React from "react";
-import { PillProps, CategoryTypes } from "./types";
+import { PillProps } from "./types";
 import { pillCategoryStyles } from "./styles";
 
 export default function Pill({ category, label, className }: PillProps) {
